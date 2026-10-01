@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+                body{background: url(back.png);
+                        background-size:cover;
+                        background-position:center;
+                        background-repeat:no-repeat;
+                        display:flex;
+                        justify-content:center;
+                        align-items:center;
+                        gap:20px;
+                        min-height:100vh;
+                        margin:0;}
+                img{width:200px;
+                        cursor:pointer;}
+                #kuma0{width:400px;}
+        </style>
+</head>
+<body>
+        <img src="rilakkuma0.png" id="kuma0">
+         <audio src="sound0.mp3" id="snd0"></audio>
+
+         <img src="rilakkuma1.png" id="kuma1">
+         <audio src="sound1.mp3" id="snd1"></audio>
+
+         <img src="rilakkuma2.png" id="kuma2">
+         <audio src="sound2.mp3" id="snd2"></audio>
+
+         <img src="rilakkuma3.png" id="kuma3">
+         <audio src="sound3.mp3" id="snd3"></audio>
+
+         <img src="rilakkuma4.png" id="kuma4">
+         <audio src="sound4.mp3" id="snd4"></audio>
+
+         <script>
+          let state0 = "off";
+         kuma0.onclick = function(){
+                 if(state0 == "off"){
+                         snd0.play();
+                         kuma0.src = "rilakkuma0_2.jpg";
+                         state0 = "on";
+                 }else if(state0 == "on"){
+                         snd0.pause();
+                         kuma0.src = "rilakkuma0.png";
+                         state0 = "off";
+                 }
+         }
+
+          let state1 = "off";
+         kuma1.onclick = function(){
+                 if(state1 == "off"){
+                         snd1.play();
+                         kuma1.src = "rilakkuma1_2.jpg";
+                         state1 = "on";
+                 }else if(state1 == "on"){
+                         snd1.pause();
+                         kuma1.src = "rilakkuma1.png";
+                         state1 = "off";
+                 }
+         }
+
+          let state2 = "off";
+         kuma2.onclick = function(){
+                 if(state2 == "off"){
+                         snd2.play();
+                         kuma2.src = "rilakkuma2_2.jpg";
+                         state2 = "on";
+                 }else if(state2 == "on"){
+                         snd2.pause();
+                         kuma2.src = "rilakkuma2.png";
+                         state2 = "off";
+                 }
+         }
+
+          let state3 = "off";
+         kuma3.onclick = function(){
+                 if(state3 == "off"){
+                         snd3.play();
+                         kuma3.src = "rilakkuma3_2.jpg";
+                         state3 = "on";
+                 }else if(state3 == "on"){
+                         snd3.pause();
+                         kuma3.src = "rilakkuma3.png";
+                         state3 = "off";
+                 }
+         }
+
+          let state4 = "off";
+         kuma4.onclick = function(){
+                 if(state4 == "off"){
+                         snd4.play();
+                         kuma4.src = "rilakkuma4_2.jpg";
+                         state4 = "on";
+                 }else if(state4 == "on"){
+                         snd4.pause();
+                         kuma4.src = "rilakkuma4.png";
+                         state4 = "off";
+                 }
+         }
+         </script>
+</body>
+</html>
